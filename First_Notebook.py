@@ -73,6 +73,128 @@ else:
 "123" + "42"
 
 
+# In[8]:
+
+
+i = 0
+while i <= 10:
+    i = i + 1
+    if i > 7:
+        i = i + 2
+print(i)
+
+
+# In[9]:
+
+
+i = 0
+p = 0
+while i <= 10:
+    p += 1
+    i = i + 1
+    if i > 7:
+        i = i + 2
+print(p)
+
+
+# In[3]:
+
+
+i = 1
+str = "*"
+while i <= 6:
+    print(str)
+    i += 1
+    str += '*'
+    
+
+
+# In[5]:
+
+
+p = 0
+i = 0
+while i < 5:
+    print('*')
+    p += 1
+    if i % 2 == 0:
+        print('**')
+        p += 2
+    if i > 2:
+        print('***')
+        p += 3
+    i = i + 1
+print(p)
+
+
+# In[25]:
+
+
+a = int(input())
+b = int(input())
+s = 0
+
+
+if (a < b):
+    while a <= b:
+        s += a
+        a += 1
+    print(s)
+else:
+    print("Число а больше или равно числу b")
+
+
+# In[ ]:
+
+
+a = int(input())
+s = 0
+
+while a != 0:
+    s += a
+    a = int(input())
+    
+print(s)
+
+
+# In[20]:
+
+
+a = int(input())
+b = int(input())
+ex = 1
+
+while (ex % a != 0) or (ex % b != 0):
+    ex += 1
+
+print(ex)
+
+
+# In[21]:
+
+
+a = 0
+while True:
+    a += 1
+    if a == 5:
+        break
+print(a)
+
+
+# In[23]:
+
+
+i = 0
+s = 0
+while i < 10:
+    i = i + 1
+    s = s + i
+    if s > 15:
+        break
+    i = i + 1
+print(i, s)
+
+
 # In[ ]:
 
 
