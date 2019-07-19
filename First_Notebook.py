@@ -195,6 +195,33 @@ while i < 10:
 print(i, s)
 
 
+# In[1]:
+
+
+i = 0
+s = 0
+while i < 10:
+    i = i + 1
+    s = s + i
+    if s > 15:
+        continue
+    i = i + 1
+print(i, s)
+
+
+# In[2]:
+
+
+while True:
+    i = int(input())
+    if (i < 10):
+        continue
+    if (i > 100):
+        break
+    print(i)
+    
+
+
 # In[ ]:
 
 
