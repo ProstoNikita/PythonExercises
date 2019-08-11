@@ -230,6 +230,37 @@ for i in range(n):
     print('*' * n)
 
 
+# In[34]:
+
+
+a1 = int(input())
+b1 = int(input())
+a2 = int(input())
+b2 = int(input())
+
+print ("\t", end='')
+for i2 in range(a2, b2 + 1):
+    if i2 != b2:
+        print(i2, "\t", end="")
+    else:
+        print(i2)
+    
+for i1 in range(a1, b1 + 1):
+    print (i1, "\t", end='')
+    for i2 in range(a2, b2 + 1):
+        if i2 != b2:
+            print(i1*i2, "\t", end="")
+        else:
+            print(i1*i2)
+    
+
+
+# In[ ]:
+
+
+
+
+
 # In[ ]:
 
 
