@@ -230,7 +230,7 @@ for i in range(n):
     print('*' * n)
 
 
-# In[34]:
+# In[2]:
 
 
 a1 = int(input())
@@ -255,10 +255,40 @@ for i1 in range(a1, b1 + 1):
     
 
 
-# In[ ]:
+# In[1]:
 
 
+a, b = (int(i) for i in input().split())
+print (a + b)
 
+
+# In[3]:
+
+
+a = int(input())
+b = int(input())
+s, n = 0, 0
+
+for i in range(a, b + 1):
+    if i % 3 == 0:
+        s += i
+        n += 1
+        
+print(float(s / n))
+
+
+# In[8]:
+
+
+genome = input() 
+genome = genome.upper()
+print(genome)
+n = 0
+
+for i in genome:
+    if i == "C" or i == "G":
+        n += 1
+print(float(n / len(genome) * 100))
 
 
 # In[ ]:
