@@ -291,6 +291,43 @@ for i in genome:
 print(float(n / len(genome) * 100))
 
 
+# In[11]:
+
+
+s = 'abcdefghijk'
+print(s[3:6])
+print(s[:6])
+print(s[3:])
+print(s[::-1])
+print(s[-3:])
+print(s[:-6])
+print(s[-1:-10:-2])
+
+
+# In[41]:
+
+
+st1 = input()
+i, a = 0, 1
+while i != (len(st1) - 1):
+    if st1[i] == st1[i+1]:
+        a += 1
+    if st1[i] != st1[i+1]:
+        st2 = st1[i] + str(a)
+    i += 1
+print(st2)
+
+
+# In[38]:
+
+
+str = "aabbcc"
+i = 0
+while i != len(str):
+    print(str[i])
+    i += 1
+
+
 # In[ ]:
 
 
