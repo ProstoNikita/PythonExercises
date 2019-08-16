@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python
 # coding: utf-8
 
@@ -47,7 +48,7 @@ if h < a:
     print('Недосып')
 elif h > b:
     print('Пересып')
-else: 
+else:
     print('Это нормально')
 
 
@@ -106,7 +107,7 @@ while i <= 6:
     print(str)
     i += 1
     str += '*'
-    
+
 
 
 # In[5]:
@@ -153,7 +154,7 @@ s = 0
 while a != 0:
     s += a
     a = int(input())
-    
+
 print(s)
 
 
@@ -219,7 +220,7 @@ while True:
     if (i > 100):
         break
     print(i)
-    
+
 
 
 # In[2]:
@@ -244,7 +245,7 @@ for i2 in range(a2, b2 + 1):
         print(i2, "\t", end="")
     else:
         print(i2)
-    
+
 for i1 in range(a1, b1 + 1):
     print (i1, "\t", end='')
     for i2 in range(a2, b2 + 1):
@@ -252,7 +253,7 @@ for i1 in range(a1, b1 + 1):
             print(i1*i2, "\t", end="")
         else:
             print(i1*i2)
-    
+
 
 
 # In[1]:
@@ -273,14 +274,14 @@ for i in range(a, b + 1):
     if i % 3 == 0:
         s += i
         n += 1
-        
+
 print(float(s / n))
 
 
 # In[8]:
 
 
-genome = input() 
+genome = input()
 genome = genome.upper()
 print(genome)
 n = 0
