@@ -26,6 +26,38 @@
 #del students[0]
 #print(students)
 
-students = ['Sasha', 'Ivan', 'Masha']
-students = sorted(students)
-print(students)
+#students = ['Sasha', 'Ivan', 'Masha']
+#students = sorted(students)
+#print(students)
+
+#a = [1, 2, 3]
+#b = a
+#a = [5, 6]
+#print(b)
+
+#a = [int(i) for i in input().split()]
+#b = 0
+#for i in a:
+#    b += i
+#print(b)
+
+a = [int(i) for i in input().split()]
+b = [0 for i in range(len(a))]
+c = 0
+if len(a) == 1:
+    print(a[0])
+else:
+    for i in a:
+        if c == 0:
+            b[c] = a[1] + a[len(a) - 1]
+        elif c == len(a) - 1:
+            b[c] = a[len(a)-2] + a[0]
+       else:
+           b[c] = a[c - 1] + a[c + 1]
+        c += 1
+    for i in b:
+        print(i, end=' ')
+
+
+
+
