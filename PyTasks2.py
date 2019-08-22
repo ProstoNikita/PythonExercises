@@ -41,23 +41,31 @@
 #    b += i
 #print(b)
 
+#a = [int(i) for i in input().split()]
+#b = [0 for i in range(len(a))]
+#c = 0
+#if len(a) == 1:
+#    print(a[0])
+#else:
+#    for i in a:
+#        if c == 0:
+#            b[c] = a[1] + a[len(a) - 1]
+#       elif c == len(a) - 1:
+#            b[c] = a[len(a)-2] + a[0]
+#       else:
+#           b[c] = a[c - 1] + a[c + 1]
+#        c += 1
+#    for i in b:
+#        print(i, end=' ')
+
 a = [int(i) for i in input().split()]
-b = [0 for i in range(len(a))]
-c = 0
-if len(a) == 1:
-    print(a[0])
-else:
-    for i in a:
-        if c == 0:
-            b[c] = a[1] + a[len(a) - 1]
-        elif c == len(a) - 1:
-            b[c] = a[len(a)-2] + a[0]
-       else:
-           b[c] = a[c - 1] + a[c + 1]
-        c += 1
-    for i in b:
-        print(i, end=' ')
+a.sort()
+a.append(0.1)
+for i in range(len(a)):
+    if a[i - 1] != a[i] and a[i - 2] == a[i - 1]:
+        print(a[i - 1], end=" ")
 
 
-
+#if a[len(a) - 2] != a[len(a) - 1] and a[len(a) - 3] == a[len(a) - 2]:
+#    print("Right")
 
